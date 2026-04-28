@@ -87,3 +87,140 @@
         height: 18px;
     }
 } 
+
+/*~for marquee-just above footer for programs*/
+.programs-marquee-section {
+  padding: 60px 0 50px;
+  overflow: hidden;
+  border-top: 1px solid #e8e8e8;
+  background: #fff;
+}
+
+.programs-marquee-header {
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.programs-marquee-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 8px;
+}
+
+.programs-marquee-label::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 1.5px;
+  background: #c8a96e;
+  flex-shrink: 0;
+}
+
+.programs-marquee-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.programs-marquee-heading span {
+  display: block;
+  font-weight: 400;
+  color: #555;
+}
+
+.track-wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.track-wrap::before,
+.track-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.track-wrap::before {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.track-wrap::after {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  padding: 8px 0 16px;
+  animation: cggap-scroll 34s linear infinite;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cggap-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.prog-card {
+  flex-shrink: 0;
+  width: 260px;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px;
+  padding: 22px 22px 20px;
+  background: #fff;
+  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: default;
+  position: relative;
+}
+
+.prog-card:hover {
+  border-color: #c8a96e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+/*Can be replaced*/
+/* .prog-card-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c8a96e;
+  margin-bottom: 14px;
+} */
+
+.prog-card h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.prog-card p {
+  font-size: 13px;
+  color: #777;
+  margin: 0;
+  line-height: 1.6;
+}
+
+

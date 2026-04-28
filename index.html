@@ -57,7 +57,7 @@
                     <div class="promo-slider__item promo-slider__item--style-2">
                         <picture>
                             <source srcset="img/img/frontimg1.png" media="(min-width: 992px)">
-       <!---IMG 3-->                      <img class="img--bg" src="img/img/frontimg1.png" alt="img">
+       <!---IMG 1-->                      <img class="img--bg" src="img/img/frontimg1.png" alt="img">
                         </picture>
                         <div class="container">
                             <div class="row">
@@ -78,7 +78,7 @@
                     <div class="promo-slider__item promo-slider__item--style-2">
                         <picture>
                             <source srcset="img/img/105.jpg" media="(min-width: 992px)">
-           <!---IMG 3-->                  <img class="img--bg" src="img/promo_2.jpg" alt="img">
+           <!---IMG 2-->                  <img class="img--bg" src="img/promo_2.jpg" alt="img">
                         </picture>
                         <div class="container">
                             <div class="row">
@@ -159,7 +159,7 @@
                         <div class="col-lg-6 col-xl-5">
                             <div class="info-box">
                                 <div class="info-box__inner">
-                        <!---IMG4-->            <img class="img--bg" src="img/img/102.jpg" alt="img">
+                        <!---IMG4-->            <img class="img--bg" src="img/img/aboutimg.png" alt="img">
                                 </div>
                             </div>
                         </div>
@@ -239,7 +239,7 @@
             <!-- gallery end-->
 
             <!-- front services start-->
-            <section class="section front-services">
+            <!-- <section class="section front-services">
                 <img class="section__bg t0 l0" src="img/front-services__bg.jpg" alt="bg">
                 <div class="container">
                     <div class="row bottom-70">
@@ -251,15 +251,58 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- front services end-->
+<!-- programs marquee start -->
+<section class="programs-marquee-section">
+
+  <div class="programs-marquee-header">
+    <p class="programs-marquee-label">Programs</p>
+    <h2 class="programs-marquee-heading">Our <span>Programs</span></h2>
+  </div>
+
+  <div class="track-wrap">
+    <div class="track" id="cggap-track"></div>
+  </div>
+
+</section>
+<!-- programs marquee end -->
+
+
         </main>
 
         <!-- Footer will be loaded here -->
         <div id="footer-container"></div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- JavaScript This is for programs-->
+<script>
+(function()
+ {     /*TITLE AND DESCRIPTION OF THE PROGRAMS*/
+  var programs=[
+    {title:"Governance & Development Dialogue", desc: "Multi-stakeholder discussions to improve local governance and cooperation."},
+    {title:"Civic Space & Democracy Advocacy", desc: "Protecting civic rights and promoting democratic participation."},
+    {title:"Capacity Building & Training", desc: "Workshops on leadership, project management, and conflict-sensitive development."},
+    {title:"Research & Knowledge Sharing", desc: "Policy briefs and insights on governance and peacebuilding."},
+    {title:"Youth & Skills Development", desc: "Training youth in financial literacy, entrepreneurship, and digital skills."},
+    {title:"Regional & International Engagement", desc: "Collaborating with global networks on development and peace initiatives."}
+  ];
+
+  var doubled = programs.concat(programs);
+  var track = document.getElementById('cggap-track');
+
+  doubled.forEach(function (p) {
+    var card = document.createElement('div');
+    card.className = 'prog-card';
+    card.innerHTML =
+      '<div class="prog-card-dot"></div>' + /*or tagline for each program*/
+      '<h3>' + p.title + '</h3>' +
+      '<p>' + p.desc + '</p>';
+    track.appendChild(card);
+  });
+})();
+</script>
+
     <script src="ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
