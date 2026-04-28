@@ -89,7 +89,7 @@
 } 
 
 /*~for marquee-just above footer for programs*/
-/* .programs-marquee-section {
+.programs-marquee-section {
   padding: 60px 0 50px;
   overflow: hidden;
   border-top: 1px solid #e8e8e8;
@@ -197,7 +197,7 @@
   border-color: #c8a96e;
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
-} */
+}
 
 /*Can be replaced*/
 /* .prog-card-dot {
@@ -208,7 +208,7 @@
   margin-bottom: 14px;
 } */
 
-/* .prog-card h3 {
+.prog-card h3 {
   font-size: 14px;
   font-weight: 600;
   color: #1a1a1a;
@@ -222,5 +222,5 @@
   margin: 0;
   line-height: 1.6;
 }
- */
+
 
