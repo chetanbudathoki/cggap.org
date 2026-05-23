@@ -476,3 +476,12 @@
     .contact-layout { grid-template-columns: 1fr; gap: 36px; }
     .contact-form-card { padding: 28px 20px; }
 }
+
+
+
+
+.promo-slider__title {
+  position: relative;
+  top: 250px; /* pushes it downward */
+}
+
