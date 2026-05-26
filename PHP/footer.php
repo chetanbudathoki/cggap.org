@@ -3,8 +3,8 @@
 					<div class="row bottom-50">
 						<div class="col-md-5 col-xl-4 text-center text-md-left"><a href="index.php"><img src="img/img/logo.png" alt="logo"></a>
 							<div class="footer__details">
-								<p><strong>Location:</strong> <span>Gyaneshwor - 30, Kathmandu, Nepal</span></p>
-								<p><strong>Phone:</strong> <a href="tel:+977 9851181857">+977 9851181857, +977 9849090665</a> </p>
+								<p><strong>Location:</strong> <span>Gyaneshwor - 30, Kathmandu, Nepal / New York City Metropolitan Area</span></p>
+								<p><strong>Phone:</strong> <a href="tel:+977 9851181857">+977 9851181857, +977 9849090665 / +1 332-253-6824 (Direct) </a> </p>
 								<p><strong>Email:</strong> <a href="mailto:contact@cggap.org">contact@cggap.org</a></p>
 								<p><strong>Opening hours:</strong> <span>9:00 AM - 5:00 PM</span></p>
 							</div>
