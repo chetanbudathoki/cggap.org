@@ -340,10 +340,30 @@
     .contact-form-card { padding: 28px 20px; }
 }
 
+.promo-slider {
+  width: 100%;
+  max-width: 100%;
+}
+
+.promo-slider,
+.promo-slider * {
+  min-width: 0;
+}
+
 .promo-slider__title {
   position: relative;
-  top: 250px; /* pushes it downward */
+   transform: translateY(-23px);
+  white-space: normal;
+  line-height: 1.2;
+font-family: 'Cormorant Garamond', Georgia, serif;
+  display: block;
+  width: 100%;
 }
+
+
+
+
+
 
 .info-box {
   width: 100%;
@@ -355,6 +375,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+    min-height: 500px; 
 }
 
 .info-box__inner img {
@@ -659,7 +680,6 @@ font-family: 'Cormorant Garamond', serif;  font-size: clamp(22px, 3.5vw, 38px);
   }
 }
 
-/*YPOGRAPHY */
 
 /* ══ FOOTER REDESIGN ════════════════════════════ */
 .footer__motto {
